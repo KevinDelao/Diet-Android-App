@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Diet App</string>
+    <string name="title_page_brand_text">Placeholder</string>
+    <string name="title_page_button_calorie_counter">Calorie Counter</string>
+    <string name="title_page_button_goals">Goals</string>
+    <string name="title_page_button_weight_progress">Weight Progress</string>
+    <string name="title_page_button_exercise">Exercise</string>
+    <string name="title_page_button_nutrition">Nutrition</string>
+    <string name="title_page_button_healthy_recipes">Healthy Recipes</string>
+    <string name="title_page_credit"><div>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
 </resources>
