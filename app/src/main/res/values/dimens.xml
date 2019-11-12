@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="title_page_image_width">100dp</dimen>
+    <dimen name="title_page_image_height">100dp</dimen>
+    <dimen name="title_page_image_margin_top">10dp</dimen>
+    <dimen name="divider_margin_left_right">100dp</dimen>
+    <dimen name="title_page_image_margin_bottom">20dp</dimen>
+    <dimen name="divider_margin_bottom">20dp</dimen>
+    <dimen name="title_page_brand_size">35sp</dimen>
+    <dimen name="button_corners">25dp</dimen>
+    <dimen name="title_page_brand_margin_bottom">20dp</dimen>
+    <dimen name="title_page_button_margin_bottom">10dp</dimen>
+    <dimen name="title_page_button_padding">10dp</dimen>
+</resources>
