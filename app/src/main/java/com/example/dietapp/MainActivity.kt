@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.ui.NavigationUI
 import androidx.drawerlayout.widget.DrawerLayout
-import com.example.dietingapp.databinding.ActivityMainBinding
+import com.example.dietapp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
     override fun onCreate(savedInstanceState: Bundle?) {
