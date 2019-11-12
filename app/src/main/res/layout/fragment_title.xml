@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="title_page"
+            type="com.example.dietingapp.TitleFragment"/>
+    </data>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/diet_image"
+        android:layout_width="@dimen/title_page_image_width"
+        android:layout_height="@dimen/title_page_image_height"
+        android:layout_marginTop="@dimen/title_page_image_margin_top"
+        android:layout_marginBottom="@dimen/title_page_image_margin_bottom"
+        app:srcCompat="@drawable/diet"
+        android:layout_gravity="center_horizontal"/>
+    <View
+        android:id="@+id/divider"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/divider_margin_left_right"
+        android:layout_marginRight="@dimen/divider_margin_left_right"
+        android:layout_marginBottom="@dimen/divider_margin_bottom"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/title_fragment_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/title_page_brand_margin_bottom"
+        android:fontFamily="@font/roboto"
+        android:textColor="@android:color/black"
+        android:text="@string/title_page_brand_text"
+        android:textSize="@dimen/title_page_brand_size"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/title_page_calorie_counter_button"
+        style="@style/title_page_buttons"
+        android:text="@string/title_page_button_calorie_counter"
+        android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
+    <Button
+        android:id="@+id/title_page_weight_progress_button"
+        style="@style/title_page_buttons"
+        android:text="@string/title_page_button_weight_progress"
+        android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
+    <Button
+        android:id="@+id/title_page_healthy_recipes_button"
+        style="@style/title_page_buttons"
+        android:text="@string/title_page_button_healthy_recipes"
+        android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
+    <Button
+        android:id="@+id/title_page_nutrition_button"
+        style="@style/title_page_buttons"
+        android:text="@string/title_page_button_nutrition"
+        android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
+    <Button
+        android:id="@+id/title_page_exercise_button"
+        style="@style/title_page_buttons"
+        android:text="@string/title_page_button_exercise"
+        android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
+    <Button
+        android:id="@+id/title_page_goals_button"
+        style="@style/title_page_buttons"
+        android:text="@string/title_page_button_goals"
+        android:layout_marginBottom="@dimen/divider_margin_bottom"/>
+    <TextView
+        style="@style/title_page_credit"/>
+</LinearLayout>
+</layout>
