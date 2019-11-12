@@ -6,7 +6,7 @@
     app:startDestination="@id/titleFragment">
     <fragment
         android:id="@+id/titleFragment"
-        android:name="com.example.dietingapp.TitleFragment"
+        android:name="com.example.dietapp.CalorieCounterFragment"
         android:label="Random Number"
         tools:layout="@layout/fragment_title">
         <!-- <action
