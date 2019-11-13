@@ -8,7 +8,7 @@
     <string name="title_page_button_nutrition">Nutrition</string>
     <string name="title_page_button_healthy_recipes">Healthy Recipes</string>
     <string name="title_page_credit"><div>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
-
+    <string name="calorie_hint">What did you eat?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
