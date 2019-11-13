@@ -13,4 +13,8 @@
         tools:layout="@layout/fragment_title">
 
     </fragment>
+    <fragment
+        android:id="@+id/calorieFragment"
+        android:name="com.example.dietapp.CalorieFragment"
+        android:label="CalorieFragment" />
 </navigation>
