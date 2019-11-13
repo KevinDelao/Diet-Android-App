@@ -11,8 +11,6 @@
 
         android:label="Random Number"
         tools:layout="@layout/fragment_title">
-        <!-- <action
-            android:id="@+id/xxxxxxxxx"
-            app:destination="@id/xxxxxxxxxx" /> -->
+
     </fragment>
 </navigation>
