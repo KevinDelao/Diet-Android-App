@@ -66,7 +66,5 @@
         style="@style/title_page_buttons"
         android:text="@string/title_page_button_goals"
         android:layout_marginBottom="@dimen/divider_margin_bottom"/>
-    <TextView
-        style="@style/title_page_credit"/>
 </LinearLayout>
 </layout>

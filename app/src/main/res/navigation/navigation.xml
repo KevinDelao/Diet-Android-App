@@ -12,9 +12,13 @@
         android:label="Random Number"
         tools:layout="@layout/fragment_title">
 
+        <action
+            android:id="@+id/action_titleFragment_to_calorieFragment"
+            app:destination="@id/calorieFragment" />
     </fragment>
     <fragment
         android:id="@+id/calorieFragment"
         android:name="com.example.dietapp.CalorieFragment"
-        android:label="CalorieFragment" />
+        android:label="CalorieFragment"
+        tools:layout="@layout/calorie_layout"/>
 </navigation>

@@ -11,17 +11,39 @@
         android:layout_gravity="center_vertical"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/addFoodButton"
+            android:layout_width="119dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/addFoodText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.441"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foodEntryText" />
+
         <EditText
-            android:id="@+id/calorieEntryText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:id="@+id/foodEntryText"
+            android:layout_width="206dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="56dp"
             android:ems="10"
             android:hint="@string/calorie_hint"
-            android:inputType="number"
-            android:textSize="20sp"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/displayFoodCalorie"
+            android:layout_width="392dp"
+            android:layout_height="427dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addFoodButton" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
