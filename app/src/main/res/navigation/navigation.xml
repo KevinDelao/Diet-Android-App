@@ -9,16 +9,24 @@
 
         android:name="com.example.dietapp.TitleFragment"
 
-        android:label="Random Number"
+        android:label="Diet App"
         tools:layout="@layout/fragment_title">
 
         <action
             android:id="@+id/action_titleFragment_to_calorieFragment"
             app:destination="@id/calorieFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_healthyRecipe"
+            app:destination="@id/healthyRecipe" />
     </fragment>
     <fragment
         android:id="@+id/calorieFragment"
         android:name="com.example.dietapp.CalorieFragment"
         android:label="CalorieFragment"
         tools:layout="@layout/calorie_layout"/>
+    <fragment
+        android:id="@+id/healthyRecipe"
+        android:name="com.example.dietapp.HealthyRecipe"
+        android:label="HealthyRecipe"
+        tools:layout="@layout/fragment_healthyrecipe"/>
 </navigation>
