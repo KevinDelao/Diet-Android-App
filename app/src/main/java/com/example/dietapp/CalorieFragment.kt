@@ -26,16 +26,7 @@ class CalorieFragment : Fragment() {
     ): View?
     {
         v = inflater.inflate(R.layout.calorie_layout,container,false);
-        FoodItems["Grilled Chicken"] = 90.0
-        FoodItems["Egg"] = 60.0
-        FoodItems["Apple"] = 40.0
-        FoodItems["Orange"] = 100.0
-        FoodItems["Pear"] = 70.0
-        FoodItems["Mango"] = 150.0
-        FoodItems["Banana"] = 105.0
-        FoodItems["Tomato"] = 30.0
-        FoodItems["Celery"] = 5.0
-        FoodItems["Avocado"] = 250.0
+        InitialiazeFoodList();
         addFood = v.findViewById(R.id.addFoodButton);
         displayFood = v.findViewById<TextView>(R.id.displayFoodCalorie);
         addFood.setOnClickListener { calculateFood(it)}
@@ -43,23 +34,23 @@ class CalorieFragment : Fragment() {
         return v;
     }
     private fun InitialiazeFoodList(){
-        FoodItems["Grilled Chicken"] = 90.0
-        FoodItems["Egg"] = 60.0
-        FoodItems["Apple"] = 40.0
-        FoodItems["Orange"] = 100.0
-        FoodItems["Pear"] = 70.0
-        FoodItems["Mango"] = 150.0
-        FoodItems["Banana"] = 105.0
-        FoodItems["Tomato"] = 30.0
-        FoodItems["Celery"] = 5.0
-        FoodItems["Avocado"] = 250.0
+        FoodItems["GRILLED CHICKEN"] = 90.0
+        FoodItems["EGG"] = 60.0
+        FoodItems["APPLE"] = 40.0
+        FoodItems["ORANGE"] = 100.0
+        FoodItems["PEAR"] = 70.0
+        FoodItems["MANGO"] = 150.0
+        FoodItems["BANANA"] = 105.0
+        FoodItems["TOMATO"] = 30.0
+        FoodItems["CELERY"] = 5.0
+        FoodItems["AVOCADO"] = 250.0
     }
     private fun calculateFood(view: View)
     {
         foodEntry = v.findViewById<EditText>(R.id.foodEntryText);
 
-        var food:String = foodEntry.text.toString();
-
+            var food:String = foodEntry.text.toString();
+            food = food.toUpperCase();
             if( FoodItems.containsKey(food))
             {
                 calorieDisplay = food+" has "+FoodItems[food].toString()+" calories";
