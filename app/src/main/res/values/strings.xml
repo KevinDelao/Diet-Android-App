@@ -11,5 +11,16 @@
     <string name="calorie_hint">What did you eat?</string>
     <string name="addFoodText">Add Food</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="exercise_intro">1. The key to successful weight loss is developing healthy diet and exercise habits. You may not like those words — diet and exercise. But do not get hung up on them. Diet just means eating healthy, lower calorie meals. <br></br>Exercise means being more physically active.</string>
+    <string name="exercise_intro_2">2. Although people appropriately focus on diet when they are trying to lose weight, being active also is an essential component of a weight-loss program. When you are active, your body uses energy (calories) to move, helping to burn the calories you take in with food you eat.</string>
+    <string name="exercise_intro_3">3. Whatever activity you choose, do it regularly. Aim for at least 150 minutes a week of moderate physical activity or 75 minutes a week of vigorous aerobic activity — preferably spread throughout the week. Keep in mind that you may need more physical activity to lose weight and keep it off.</string>
+    <string name="more_exercise_button">More Exercise</string>
+
+    <string name="exercise2">5 tips to maximize your workouts</string>
+    <string name="home_button">Home</string>
+    <string name="exercise2_2">1. Eat a healthy breakfast: If you exercise in the morning, get up early enough to finish breakfast at least one hour before your workout.</string>
+    <string name="exercise2_3">2. Watch the food portion size: Be careful not to overdo it when it comes to how much you eat before exercise.</string>
+    <string name="exercise2_4">3. Snack well: Snacks eaten soon before exercise probably would not give you added energy if your workout lasts less than 60 minutes, but they may prevent distracting hunger pangs.</string>
+    <string name="exercise2_5">4. Eat after you exercise: To help your muscles recover and to replace their glycogen stores, eat a meal that contains both carbohydrates and protein within two hours of your exercise session if possible.</string>
+    <string name="exercise2_6">5. Drink up: Do not forget to drink fluids. You need adequate fluids before, during and after exercise to help prevent dehydration.</string>
 </resources>

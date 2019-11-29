@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_titleFragment_to_healthyRecipe"
             app:destination="@id/healthyRecipe" />
+        <action
+            android:id="@+id/action_titleFragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
     </fragment>
     <fragment
         android:id="@+id/calorieFragment"
@@ -29,4 +32,22 @@
         android:name="com.example.dietapp.HealthyRecipe"
         android:label="HealthyRecipe"
         tools:layout="@layout/fragment_healthyrecipe"/>
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.example.dietapp.ExerciseFragment"
+        android:label="Exercise"
+        tools:layout="@layout/fragment_exercise" >
+        <action
+            android:id="@+id/action_exerciseFragment_to_exercise2Fragment"
+            app:destination="@id/exercise2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exercise2Fragment"
+        android:name="com.example.dietapp.Exercise2Fragment"
+        android:label="More Exercise"
+        tools:layout="@layout/fragment_exercise2" >
+        <action
+            android:id="@+id/action_exercise2Fragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
 </navigation>
