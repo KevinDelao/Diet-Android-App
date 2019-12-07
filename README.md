@@ -8,3 +8,5 @@ Yilin Ruan: Healthy Food Recipe
 Kuong Thong: Notifications
 
 Nicholas Torres: Records Fragment
+
+Thyagu Gowda: Exercise Fragment
