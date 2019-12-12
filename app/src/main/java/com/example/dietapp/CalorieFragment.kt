@@ -32,7 +32,7 @@ class CalorieFragment : Fragment() {
 
         mFoodViewModel = ViewModelProviders.of(this).get(FoodViewModel::class.java)
 
-        mFoodViewModel!!.allWords?.observe(this, Observer { foods ->
+        mFoodViewModel!!.allFoods?.observe(this, Observer { foods ->
             adapter.setWords(foods)
         })
         val newFood = v.findViewById<Button>(R.id.newfood_button)

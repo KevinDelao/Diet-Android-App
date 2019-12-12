@@ -55,9 +55,9 @@ abstract class FoodRoomDatabase extends RoomDatabase {
                 FoodDao dao = INSTANCE.foodDao();
                 dao.deleteAll();
 
-                Food food = new Food("Hello");
+                Food food = new Food("Apple");
                 dao.insert(food);
-                food = new Food("World");
+                food = new Food("Orange");
                 dao.insert(food);
             });
         }

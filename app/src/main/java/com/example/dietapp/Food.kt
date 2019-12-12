@@ -8,3 +8,6 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "food_table")
 class Food(@field:ColumnInfo(name = "food") @field:PrimaryKey val food: String)
+{
+
+}

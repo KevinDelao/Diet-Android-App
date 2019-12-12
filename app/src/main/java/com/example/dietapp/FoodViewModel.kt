@@ -10,7 +10,7 @@ class FoodViewModel(application: Application?) : AndroidViewModel(application!!)
 {
     private val mRepository: FoodRepository
 
-    val allWords: LiveData<List<Food?>?>?
+    val allFoods: LiveData<List<Food?>?>?
 
     fun insert(food: Food?) {
         mRepository.insert(food)
@@ -18,6 +18,6 @@ class FoodViewModel(application: Application?) : AndroidViewModel(application!!)
 
     init {
         mRepository = FoodRepository(application)
-        allWords = mRepository.allFoods
+        allFoods = mRepository.allFoods
     }
 }

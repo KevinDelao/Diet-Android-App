@@ -9,7 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class FoodListAdapter internal constructor(context: Context?) : RecyclerView.Adapter<FoodListAdapter.FoodViewHolder>() {
-    inner class FoodViewHolder public constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class FoodViewHolder public constructor(itemView: View) : RecyclerView.ViewHolder(itemView)
+    {
         val foodItemView: TextView
 
         init {

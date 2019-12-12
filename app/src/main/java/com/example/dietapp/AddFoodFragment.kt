@@ -18,7 +18,9 @@ class AddFoodFragment : Fragment()
 {
     private var mFoodViewModel: FoodViewModel? = null
     lateinit var fragview:View
-    private var mEditWordView: EditText? = null
+    private var mEditFoodView: EditText? = null
+    private var mEditCalorieView: EditText? = null
+
 
     lateinit var button: Button
 
@@ -31,7 +33,8 @@ class AddFoodFragment : Fragment()
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true)
          fragview = inflater.inflate(R.layout.fragment_add_food,container,false)
-         mEditWordView = fragview.findViewById(R.id.edit_food)
+        mEditFoodView = fragview.findViewById(R.id.edit_food)
+        mEditCalorieView = fragview.findViewById(R.id.edit_calories)
          button = fragview.findViewById(R.id.button_save)
         mFoodViewModel = ViewModelProviders.of(this).get(FoodViewModel::class.java)
         button.setOnClickListener {addFoods(it)}
@@ -41,7 +44,8 @@ class AddFoodFragment : Fragment()
 
     private fun addFoods(view: View)
     {
-        val foodInput = mEditWordView!!.text.toString()
+        val foodInput = mEditFoodView!!.text.toString()
+        val calorieInput =  mEditCalorieView!!.text.toString()
         val food = Food(foodInput)
         mFoodViewModel!!.insert(food)
         val imm =

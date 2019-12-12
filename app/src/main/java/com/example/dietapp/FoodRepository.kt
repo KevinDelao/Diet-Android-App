@@ -6,19 +6,19 @@ import androidx.lifecycle.LiveData
 
 
 internal class FoodRepository(application: Application?) {
-    private val mWordDao: FoodDao
+    private val mFoodDao: FoodDao
 
     val allFoods: LiveData<List<Food?>?>
 
 
     fun insert(food: Food?) {
-        FoodRoomDatabase.databaseWriteExecutor.execute { mWordDao.insert(food) }
+        FoodRoomDatabase.databaseWriteExecutor.execute { mFoodDao.insert(food) }
     }
 
 
     init {
         val db = FoodRoomDatabase.getDatabase(application)
-        mWordDao = db.foodDao()
-        allFoods = mWordDao.alphabetizedFoods
+        mFoodDao = db.foodDao()
+        allFoods = mFoodDao.alphabetizedFoods
     }
 }
