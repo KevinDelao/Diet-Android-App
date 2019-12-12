@@ -15,6 +15,12 @@ internal class FoodRepository(application: Application?) {
         FoodRoomDatabase.databaseWriteExecutor.execute { mFoodDao.insert(food) }
     }
 
+    fun delete()
+    {
+        FoodRoomDatabase.databaseWriteExecutor.execute{mFoodDao.deleteAll()}
+    }
+
+
 
     init {
         val db = FoodRoomDatabase.getDatabase(application)

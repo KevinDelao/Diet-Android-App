@@ -13,18 +13,12 @@ import androidx.annotation.NonNull;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/**
- * This is the backend. The database. This used to be done by the OpenHelper.
- * The fact that this has very few comments emphasizes its coolness.  In a real
- * app, consider exporting the schema to help you with migrations.
- */
 
 @Database(entities = {Food.class}, version = 1, exportSchema = false)
 abstract class FoodRoomDatabase extends RoomDatabase {
 
     abstract FoodDao foodDao();
 
-    // marking the instance as volatile to ensure atomic access to the variable
     private static volatile FoodRoomDatabase INSTANCE;
     private static final int NUMBER_OF_THREADS = 4;
     static final ExecutorService databaseWriteExecutor =
@@ -55,9 +49,9 @@ abstract class FoodRoomDatabase extends RoomDatabase {
                 FoodDao dao = INSTANCE.foodDao();
                 dao.deleteAll();
 
-                Food food = new Food("Apple");
+                Food food = new Food("Apple: 100 Cslories");
                 dao.insert(food);
-                food = new Food("Orange");
+                food = new Food("Orange: 60 calories");
                 dao.insert(food);
             });
         }

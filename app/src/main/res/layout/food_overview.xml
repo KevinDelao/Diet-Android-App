@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/reviewheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/regularPad"
+        android:text="@string/Food_Review"
+        android:textColor="@color/colorPrimaryOff"
+        android:textSize="@dimen/largeText"
+        android:textStyle="bold" />
+
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/calorie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryBlue" />
+
+        <TextView
+            android:id="@+id/chartGotCalories_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryBlue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/limit"
+            android:textColor="#2196F3"
+            android:textSize="@dimen/regularText" />
+
+        <TextView
+            android:id="@+id/basicCalories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="1400"
+            android:textColor="#2196F3"
+            android:textSize="@dimen/extralargeText" />
+
+        <TextView
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:text="@string/calories"
+            android:textColor="#2196F3"
+            android:textSize="@dimen/regularText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/cosumedtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/consumed"
+            android:textColor="#2196F3"
+            android:textSize="@dimen/regularText" />
+
+        <TextView
+            android:id="@+id/gotCalories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="850"
+            android:textColor="#2196F3"
+            android:textSize="@dimen/extralargeText" />
+
+        <TextView
+            android:id="@+id/calorietext2"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:text="@string/calories"
+            android:textColor="#2196F3"
+            android:textSize="@dimen/regularText" />
+
+    </LinearLayout>
+
+</LinearLayout>

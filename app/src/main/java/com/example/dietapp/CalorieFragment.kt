@@ -1,9 +1,12 @@
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
+import android.widget.ImageButton
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -32,14 +35,27 @@ class CalorieFragment : Fragment() {
 
         mFoodViewModel = ViewModelProviders.of(this).get(FoodViewModel::class.java)
 
+
         mFoodViewModel!!.allFoods?.observe(this, Observer { foods ->
-            adapter.setWords(foods)
+            adapter.setFoods(foods)
         })
         val newFood = v.findViewById<Button>(R.id.newfood_button)
+        val foodOverview = v.findViewById<ImageButton>(R.id.foodoverview_button)
         newFood.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_calorieFragment_to_addFoodFragment2)
         }
+        foodOverview.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_calorieFragment_to_foodOverViewFragment)
+        }
+
         return v;
+    }
+    private fun deleteFoods()
+    {
+        mFoodViewModel!!.delete();
+
+
+
 
     }
 }

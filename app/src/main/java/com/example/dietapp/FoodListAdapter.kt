@@ -27,22 +27,26 @@ class FoodListAdapter internal constructor(context: Context?) : RecyclerView.Ada
         return FoodViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: FoodViewHolder, position: Int)
+    {
         if (mFoods != null) {
             val current = mFoods!![position]
-            holder.foodItemView.text = current!!.food
+            var temp:Food? = mFoods!![position]
+            holder.foodItemView.text = temp?.food
         } else { // Covers the case of data not being ready yet.
             holder.foodItemView.text = "No Food"
         }
     }
 
-    fun setWords(foods: List<Food?>?) {
+    fun setFoods(foods: List<Food?>?)
+    {
         mFoods = foods
         notifyDataSetChanged()
     }
 
 
-    override fun getItemCount(): Int {
+    override fun getItemCount(): Int
+    {
         return if (mFoods != null) mFoods!!.size else 0
     }
 

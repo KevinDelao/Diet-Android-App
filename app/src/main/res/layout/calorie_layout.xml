@@ -27,30 +27,16 @@ So, we are leaving the template code in. -->
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/foodrecord_button"
-        android:layout_width="162dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="32dp"
-        android:layout_weight="0.3"
-        android:background="@color/colorPrimary"
-        android:padding="@dimen/regularPad"
-        android:src="@drawable/ico_record_wh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
         android:id="@+id/foodoverview_button"
         android:layout_width="163dp"
         android:layout_height="86dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginEnd="112dp"
         android:layout_weight="0.3"
         android:background="@color/colorPrimaryOff"
         android:padding="@dimen/regularPad"
         android:src="@drawable/ico_overview"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/foodrecord_button" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/newfood_button"
@@ -100,12 +86,12 @@ So, we are leaving the template code in. -->
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/foodrecord_button"
+        app:layout_constraintBottom_toTopOf="@+id/foodoverview_button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foodlist_button"
         tools:listitem="@layout/recyclerview_item" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

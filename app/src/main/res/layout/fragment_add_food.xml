@@ -20,6 +20,7 @@ limitations under the License. -->
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -27,7 +28,7 @@ limitations under the License. -->
         android:background="@color/colorPrimary"
         android:gravity="center"
         android:padding="@dimen/regularPad"
-        android:text="@string/food_diary"
+        android:text="@string/addFoodText"
         android:textColor="@color/colorPrimaryOff"
         android:textSize="@dimen/largeText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,10 +50,12 @@ limitations under the License. -->
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+
     <EditText
         android:id="@+id/edit_calories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-light"
         android:hint="@string/calorie_hint"
         android:inputType="textAutoComplete"
@@ -65,14 +68,15 @@ limitations under the License. -->
 
     <Button
         android:id="@+id/button_save"
-        android:layout_width="343dp"
-        android:layout_height="80dp"
+        android:layout_width="205dp"
+        android:layout_height="39dp"
         android:background="@color/colorPrimary"
         android:text="@string/button_save"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_food" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_calories"
+        app:layout_constraintVertical_bias="0.126" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

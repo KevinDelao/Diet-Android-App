@@ -9,10 +9,12 @@ import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
-
+import com.example.dietapp.databinding.ActivityMainBinding
 
 class AddFoodFragment : Fragment()
 {
@@ -20,8 +22,6 @@ class AddFoodFragment : Fragment()
     lateinit var fragview:View
     private var mEditFoodView: EditText? = null
     private var mEditCalorieView: EditText? = null
-
-
     lateinit var button: Button
 
 
@@ -33,6 +33,7 @@ class AddFoodFragment : Fragment()
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true)
          fragview = inflater.inflate(R.layout.fragment_add_food,container,false)
+
         mEditFoodView = fragview.findViewById(R.id.edit_food)
         mEditCalorieView = fragview.findViewById(R.id.edit_calories)
          button = fragview.findViewById(R.id.button_save)
@@ -44,8 +45,9 @@ class AddFoodFragment : Fragment()
 
     private fun addFoods(view: View)
     {
-        val foodInput = mEditFoodView!!.text.toString()
+        var foodInput = mEditFoodView!!.text.toString()
         val calorieInput =  mEditCalorieView!!.text.toString()
+        foodInput = foodInput+": "+calorieInput+" calories"
         val food = Food(foodInput)
         mFoodViewModel!!.insert(food)
         val imm =

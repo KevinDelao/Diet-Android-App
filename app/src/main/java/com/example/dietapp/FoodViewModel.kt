@@ -16,6 +16,11 @@ class FoodViewModel(application: Application?) : AndroidViewModel(application!!)
         mRepository.insert(food)
     }
 
+    fun delete(){
+        mRepository.delete();
+    }
+
+
     init {
         mRepository = FoodRepository(application)
         allFoods = mRepository.allFoods

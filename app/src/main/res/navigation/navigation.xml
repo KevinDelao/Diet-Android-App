@@ -32,6 +32,9 @@
         <action
             android:id="@+id/action_calorieFragment_to_addFoodFragment2"
             app:destination="@id/addFoodFragment2" />
+        <action
+            android:id="@+id/action_calorieFragment_to_foodOverViewFragment"
+            app:destination="@id/foodOverViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFoodFragment2"
@@ -40,6 +43,15 @@
         tools:layout="@layout/fragment_add_food">
         <action
             android:id="@+id/action_addFoodFragment2_to_calorieFragment"
+            app:destination="@id/calorieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodOverViewFragment"
+        android:name="com.example.dietapp.FoodOverViewFragment"
+        android:label="FoodOverViewFragment"
+        tools:layout="@layout/food_overview">
+        <action
+            android:id="@+id/action_foodOverViewFragment_to_calorieFragment"
             app:destination="@id/calorieFragment" />
     </fragment>
 </navigation>
