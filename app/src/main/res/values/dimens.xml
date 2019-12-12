@@ -12,4 +12,14 @@
     <dimen name="title_page_brand_margin_bottom">20dp</dimen>
     <dimen name="title_page_button_margin_bottom">10dp</dimen>
     <dimen name="title_page_button_padding">10dp</dimen>
+    <!-- textSize -->
+    <dimen name="smallText"></dimen>
+    <dimen name="regularText">18sp</dimen>
+    <dimen name="largeText">30sp</dimen>
+    <dimen name="extralargeText">50sp</dimen>
+    <!-- spaceSize -->
+    <dimen name="wrapPad">40dp</dimen>
+    <dimen name="regularPad">20dp</dimen>
+    <dimen name="small_padding">6dp</dimen>
+    <dimen name="big_padding">16dp</dimen>
 </resources>

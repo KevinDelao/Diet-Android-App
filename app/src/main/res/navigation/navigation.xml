@@ -13,20 +13,33 @@
         tools:layout="@layout/fragment_title">
 
         <action
-            android:id="@+id/action_titleFragment_to_calorieFragment"
-            app:destination="@id/calorieFragment" />
-        <action
             android:id="@+id/action_titleFragment_to_healthyRecipe"
             app:destination="@id/healthyRecipe" />
+        <action
+            android:id="@+id/action_titleFragment_to_calorieFragment"
+            app:destination="@id/calorieFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/calorieFragment"
-        android:name="com.example.dietapp.CalorieFragment"
-        android:label="CalorieFragment"
-        tools:layout="@layout/calorie_layout"/>
     <fragment
         android:id="@+id/healthyRecipe"
         android:name="com.example.dietapp.HealthyRecipe"
         android:label="HealthyRecipe"
         tools:layout="@layout/fragment_healthyrecipe"/>
+    <fragment
+        android:id="@+id/calorieFragment"
+        android:name="CalorieFragment"
+        android:label="CalorieFragment"
+        tools:layout="@layout/calorie_layout">
+        <action
+            android:id="@+id/action_calorieFragment_to_addFoodFragment2"
+            app:destination="@id/addFoodFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFoodFragment2"
+        android:name="com.example.dietapp.AddFoodFragment"
+        android:label="AddFoodFragment"
+        tools:layout="@layout/fragment_add_food">
+        <action
+            android:id="@+id/action_addFoodFragment2_to_calorieFragment"
+            app:destination="@id/calorieFragment" />
+    </fragment>
 </navigation>

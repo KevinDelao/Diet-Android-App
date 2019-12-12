@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="disclaimer_color">#969696</color>
+    <color name="colorPrimarylight">#4eba6a</color>
+    <color name="colorPrimaryBlue">#4a8db5</color>
+    <color name="colorPrimaryOff">#FFF</color>
 </resources>
