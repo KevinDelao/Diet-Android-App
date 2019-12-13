@@ -49,7 +49,7 @@ abstract class FoodRoomDatabase extends RoomDatabase {
                 FoodDao dao = INSTANCE.foodDao();
                 dao.deleteAll();
 
-                Food food = new Food("Apple: 100 Cslories");
+                Food food = new Food("Apple: 100 calories");
                 dao.insert(food);
                 food = new Food("Orange: 60 calories");
                 dao.insert(food);

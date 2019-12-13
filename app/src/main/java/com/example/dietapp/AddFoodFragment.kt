@@ -9,12 +9,12 @@ import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
-import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
-import com.example.dietapp.databinding.ActivityMainBinding
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.util.*
 
 class AddFoodFragment : Fragment()
 {
@@ -47,7 +47,10 @@ class AddFoodFragment : Fragment()
     {
         var foodInput = mEditFoodView!!.text.toString()
         val calorieInput =  mEditCalorieView!!.text.toString()
-        foodInput = foodInput+": "+calorieInput+" calories"
+        val localDateTime: LocalDateTime = LocalDateTime.now()
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+        val output: String = formatter.format(localDateTime)
+        foodInput = foodInput+": "+calorieInput+" calories, Eaten at: "+output;
         val food = Food(foodInput)
         mFoodViewModel!!.insert(food)
         val imm =

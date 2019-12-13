@@ -10,7 +10,7 @@ import androidx.room.Query
 
 @Dao
 interface FoodDao {
-    @get:Query("SELECT * from food_table ORDER BY food ASC")
+    @get:Query("SELECT * from food_table")
     val alphabetizedFoods: LiveData<List<Food?>?>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
