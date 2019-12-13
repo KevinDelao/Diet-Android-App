@@ -1,3 +1,4 @@
+
 package com.example.dietapp.ui
 
 import android.app.*
@@ -8,10 +9,10 @@ import android.os.SystemClock
 import androidx.core.app.AlarmManagerCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.*
-import com.example.dietapp.receiver.AlarmReceiver
+import com.example.android.eggtimernotifications.util.cancelNotifications
 import com.example.dietapp.R
-import com.example.dietapp.util.cancelNotifications
-import com.example.dietapp.util.sendNotification
+
+import com.example.dietapp.receiver.AlarmReceiver
 import kotlinx.coroutines.*
 
 class EggTimerViewModel(private val app: Application) : AndroidViewModel(app) {

@@ -17,13 +17,14 @@
         android:layout_height="match_parent"
         tools:context=".ui.EggTimerFragment">
 
-<!--        app:elapsedTime="@{eggTimerViewModel.elapsedTime}"-->
+        <!--        app:elapsedTime="@{eggTimerViewModel.elapsedTime}"-->
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
