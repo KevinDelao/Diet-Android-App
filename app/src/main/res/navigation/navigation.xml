@@ -105,4 +105,9 @@
             android:id="@+id/recordEntry_to_recordProgress"
             app:destination="@id/recordsFragment"/>
     </fragment>
+    <fragment
+        android:id="@+id/notificationActivity"
+        android:name="com.example.dietapp.NotificationActivity"
+        android:label="NotificationActivity"
+        tools:layout="@layout/fragment_notification"/>
 </navigation>

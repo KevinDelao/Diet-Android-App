@@ -29,15 +29,15 @@ class CalorieFragment : Fragment() {
     ): View? {
         v = inflater.inflate(R.layout.calorie_layout, container, false);
         val recyclerView = v.findViewById<RecyclerView>(R.id.recyclerview)
-        val adapter = FoodListAdapter(activity)
-        recyclerView.adapter = adapter
+        val adapter2 = FoodListAdapter(activity)
+        recyclerView.adapter = adapter2
         recyclerView.layoutManager = LinearLayoutManager(activity)
 
         mFoodViewModel = ViewModelProviders.of(this).get(FoodViewModel::class.java)
 
 
         mFoodViewModel!!.allFoods?.observe(this, Observer { foods ->
-            adapter.setFoods(foods)
+            adapter2.setFoods(foods)
         })
         val newFood = v.findViewById<Button>(R.id.newfood_button)
         val foodOverview = v.findViewById<ImageButton>(R.id.foodoverview_button)
