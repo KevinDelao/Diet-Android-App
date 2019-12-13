@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <data>
+        <variable
+            name="record_entry"
+            type="com.example.dietapp.RecordEntryFragment" />
+    </data>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/edit_text"
+            android:layout_gravity="center_horizontal"
+            android:importantForAutofill="no"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAlignment="center"
+            android:hint="Weight"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/caloriesEditText"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:layout_marginTop="70dp"
+            android:textAlignment="center"
+            android:background="@drawable/edit_text"
+            android:layout_gravity="center_horizontal"
+            android:importantForAutofill="no"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="Calories"
+            android:inputType="number"/>
+        <Button
+            android:id="@+id/submitRecordButton"
+            style="@style/title_page_buttons"
+            android:text="Submit"
+            android:layout_marginTop="70dp"/>
+    </LinearLayout>
+</layout>
