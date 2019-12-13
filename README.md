@@ -18,6 +18,8 @@ Kotlin was used to make all the files associated with the calorie fragment
 The calorie fragment provides a easy to use interface that allows users to simply to click on a button that takes them to a entry
 point and lets users enter what they ate and then see at what time the food was eaten.
 
+## Screenshots
+
 
 Yilin Ruan: Healthy Food Recipe
 
