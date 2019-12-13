@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/calorieFragment"
+        android:icon="@android:drawable/star_big_on"
+        android:title="Calorie Counter" />
+    <item
+        android:id="@+id/recordTrackerFragment"
+        android:icon="@android:drawable/star_big_on"
+        android:title="Weight Progress"/>
+    <item
+        android:id="@+id/healthyRecipe"
+        android:icon="@android:drawable/star_big_on"
+        android:title="Healthy Recipes"/>
+    <item
+        android:id="@+id/notificationsFragment"
+        android:icon="@android:drawable/star_big_on"
+        android:title="Notifications"/>
 </menu>

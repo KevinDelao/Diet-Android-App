@@ -5,8 +5,12 @@ First Document
 The purpose of the Calorie Counter Fragment is to provide a way for users to register what they have eaten throughout the day and track at
 what time they ate to ensure that users know what they are eating to promote healthier living.
 
+The purpose of healthy recipe fragment is to provide users with some good recipes so that they can easily follow and learn how to make healthy foods
+
 ## Motivation:
 Most diet apps restrict you on what you can track and sometimes provide too many options on what to track for certain foods, the calorie fragment is meant to provide a very simple way for users to enter what they ate and record at what time of the day they ate in order to provide a simple tracking of calories.
+
+Healthy recipe fragment provides nice looking and easy-to-learn meals to ensure users are motivated to maintain a healthy diet
 
 ## Code style:
 
@@ -20,6 +24,8 @@ The Healthy Recipe Fragment provides the healthy food recipes that can help user
 
 ## Screenshots
 <img src="screenshots/caloriefragment.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_foodentry.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_overiview.png" alt="phone image" width="200px" />
+
+<img src="screenshots/healthyRecipe01.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe02.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe03.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe04.PNG" alt="phone image" width="200px" />
 
 ## Some Libraries Used
 1. Room: https://developer.android.com/topic/libraries/architecture/room
