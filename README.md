@@ -2,6 +2,7 @@
 First Document 
 
 Kevin Delao: Calorie Counter Fragment
+
 Introduction:
 The purpose of the Calorie Counter Fragment is to provide a way for users to register what they have eaten throughout the day and track at
 what time they ate to ensure that users know what they are eating to promote healthier living.
