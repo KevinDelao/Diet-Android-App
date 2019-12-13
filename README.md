@@ -16,6 +16,8 @@ Kotlin was used to make all the files associated with the calorie fragment
 The calorie fragment provides a easy to use interface that allows users to simply to click on a button that takes them to a entry
 point and lets users enter what they ate and then see at what time the food was eaten.
 
+The Healthy Recipe Fragment provides the healthy food recipes that can help users to reach and maintain healthy weight and reduce risk of diseases. User can easily learn how to make the food and buy the ingredients by clicking them. (For healthy drink just click the picture)
+
 ## Screenshots
 <img src="screenshots/caloriefragment.png" alt="phone image" width="200px" />
 <img src="screenshots/caloriefragment_foodentry.png" alt="phone image" width="200px" />
