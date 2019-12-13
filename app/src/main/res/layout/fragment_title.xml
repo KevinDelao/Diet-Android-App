@@ -52,24 +52,9 @@
         android:text="@string/title_page_button_healthy_recipes"
         android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
     <Button
-        android:id="@+id/title_page_nutrition_button"
-        style="@style/title_page_buttons"
-        android:text="@string/title_page_button_nutrition"
-        android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
-    <Button
-        android:id="@+id/title_page_exercise_button"
-        style="@style/title_page_buttons"
-        android:text="@string/title_page_button_exercise"
-        android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
-    <Button
         android:id="@+id/title_page_notification_button"
         style="@style/title_page_buttons"
         android:text="@string/title_page_button_notification"
         android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
-    <Button
-        android:id="@+id/title_page_goals_button"
-        style="@style/title_page_buttons"
-        android:text="@string/title_page_button_goals"
-        android:layout_marginBottom="@dimen/divider_margin_bottom"/>
 </LinearLayout>
 </layout>

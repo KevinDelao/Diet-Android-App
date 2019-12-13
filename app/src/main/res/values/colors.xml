@@ -10,4 +10,5 @@
     <color name="food_default_color">#0F1B35</color>
     <color name="food_background">#0F192F</color>
     <color name="sub_title">#99E8CC</color>
+    <color name="NavHeaderColor">#344EA3</color>
 </resources>

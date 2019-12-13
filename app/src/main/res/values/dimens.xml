@@ -10,7 +10,7 @@
     <dimen name="title_page_brand_size">35sp</dimen>
     <dimen name="button_corners">25dp</dimen>
     <dimen name="title_page_brand_margin_bottom">20dp</dimen>
-    <dimen name="title_page_button_margin_bottom">10dp</dimen>
+    <dimen name="title_page_button_margin_bottom">30dp</dimen>
     <dimen name="title_page_button_padding">10dp</dimen>
     <!-- textSize -->
     <dimen name="smallText"></dimen>

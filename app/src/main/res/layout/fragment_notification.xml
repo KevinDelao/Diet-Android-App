@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         tools:context=".ui.EggTimerFragment">
 
-<!--        app:elapsedTime="@{eggTimerViewModel.elapsedTime}"-->
+        <!--        app:elapsedTime="@{eggTimerViewModel.elapsedTime}"-->
 
         <TextView
             android:id="@+id/textView"
