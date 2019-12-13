@@ -20,6 +20,10 @@ point and lets users enter what they ate and then see at what time the food was 
 
 ## Screenshots
 <img src="screenshots/caloriefragment.png" alt="phone image" width="200px" />
+<img src="screenshots/caloriefragment_foodentry.png" alt="phone image" width="200px" />
+<img src="screenshots/caloriefragment_overiview.png" alt="phone image" width="200px" />
+
+
 
 
 Yilin Ruan: Healthy Food Recipe
