@@ -19,6 +19,7 @@ The calorie fragment provides a easy to use interface that allows users to simpl
 point and lets users enter what they ate and then see at what time the food was eaten.
 
 ## Screenshots
+<img src="screenshots/caloriefragment.png" alt="phone image" width="200px" />
 
 
 Yilin Ruan: Healthy Food Recipe
