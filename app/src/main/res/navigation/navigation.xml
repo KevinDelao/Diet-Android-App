@@ -19,11 +19,41 @@
             android:id="@+id/action_titleFragment_to_calorieFragment"
             app:destination="@id/calorieFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/healthyRecipe"
         android:name="com.example.dietapp.HealthyRecipe"
         android:label="HealthyRecipe"
-        tools:layout="@layout/fragment_healthyrecipe"/>
+        tools:layout="@layout/fragment_healthyrecipe">
+        <action
+            android:id="@+id/action_healthyRecipe_to_healthyRecipe_FoodMenu"
+            app:destination="@id/healthyRecipe_FoodMenu" />
+        <action
+            android:id="@+id/action_healthyRecipe_to_healthyRecipe_OrangeDrink2"
+            app:destination="@id/healthyRecipe_OrangeDrink" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthyRecipe_FoodMenu"
+        android:name="com.example.dietapp.HealthyRecipe_FoodMenu"
+        android:label="HealthyRecipe_FoodMenu"
+        tools:layout="@layout/fragment_healthyrecipe_food_menu">
+        <action
+            android:id="@+id/action_healthyRecipe_FoodMenu_to_healthyRecipe_FoodDetail"
+            app:destination="@id/healthyRecipe_FoodDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthyRecipe_FoodDetail"
+        android:name="com.example.dietapp.HealthyRecipe_FoodDetail"
+        android:label="HealthyRecipe_FoodDetail"
+        tools:layout="@layout/fragment_healthyrecipe_food_detail"/>
+    <fragment
+        android:id="@+id/healthyRecipe_OrangeDrink"
+        android:name="com.example.dietapp.HealthyRecipe_OrangeDrink"
+        android:label="HealthyRecipe_OrangeDrink"
+        tools:layout="@layout/fragment_healthyrecipe_orange_drink"/>
+
+
+
     <fragment
         android:id="@+id/calorieFragment"
         android:name="CalorieFragment"

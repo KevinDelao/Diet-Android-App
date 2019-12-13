@@ -6,5 +6,8 @@
     <color name="disclaimer_color">#969696</color>
     <color name="colorPrimarylight">#4eba6a</color>
     <color name="colorPrimaryBlue">#4a8db5</color>
-    <color name="colorPrimaryOff">#FFF</color>
+    <color name="colorPrimaryOff">#FFFFFF</color>
+    <color name="food_default_color">#0F1B35</color>
+    <color name="food_background">#0F192F</color>
+    <color name="sub_title">#99E8CC</color>
 </resources>

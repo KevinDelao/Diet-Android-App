@@ -20,7 +20,7 @@ class FoodListAdapter internal constructor(context: Context?) : RecyclerView.Ada
 
     val mInflater: LayoutInflater
     private var mFoods
-            : List<Food?>? = null
+: List<Food?>? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {
         val itemView = mInflater.inflate(R.layout.recyclerview_item, parent, false)

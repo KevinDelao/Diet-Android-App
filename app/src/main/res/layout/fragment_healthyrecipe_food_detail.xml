@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/food_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shrimp_instruction1"
+            android:layout_width="391dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/healthyrecipe_food_shrimp_instruction1"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_instruction2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_instruction_title" />
+
+        <TextView
+            android:id="@+id/shrimp_instruction2"
+            android:layout_width="389dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/healthyrecipe_food_shrimp_instruction2"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_instruction3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_instruction1" />
+
+        <TextView
+            android:id="@+id/shrimp_instruction3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="119dp"
+            android:layout_marginBottom="319dp"
+            android:text="@string/healthyrecipe_food_shrimp_instruction3"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_instruction2" />
+
+        <TextView
+            android:id="@+id/shrimp_instruction_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="320dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/healthyrecipe_food_shrimp_instruction_title"
+            android:textAlignment="center"
+            android:textColor="@color/sub_title"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_instruction1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/shrimp_ingredient_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="320dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/healthyrecipe_food_shrimp_ingredient_title"
+            android:textColor="@color/sub_title"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_ingredient1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/shrimp_ingredient1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="237dp"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:text="@string/healthyrecipe_food_shrimp_ingredient1"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_ingredient2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_ingredient_title" />
+
+        <TextView
+            android:id="@+id/shrimp_ingredient2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="185dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/healthyrecipe_food_shrimp_ingredient2"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_ingredient3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_ingredient1" />
+
+        <TextView
+            android:id="@+id/shrimp_ingredient3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="243dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/healthyrecipe_food_shrimp_ingredient3"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_ingredient4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_ingredient2" />
+
+        <TextView
+            android:id="@+id/shrimp_ingredient6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="257dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/healthyrecipe_food_shrimp_ingredient6"
+            android:textColor="@color/colorPrimaryOff"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_ingredient7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_ingredient5" />
+
+        <TextView
+            android:id="@+id/shrimp_ingredient5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="241dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/healthyrecipe_food_shrimp_ingredient5"
+            android:textColor="@color/colorPrimaryOff"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_ingredient6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_ingredient4" />
+
+        <TextView
+            android:id="@+id/shrimp_ingredient7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="251dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/healthyrecipe_food_shrimp_ingredient7"
+            android:textColor="@color/colorPrimaryOff"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_ingredient6" />
+
+        <TextView
+            android:id="@+id/shrimp_ingredient4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="113dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/healthyrecipe_food_shrimp_ingredient4"
+            android:textColor="@color/colorPrimaryOff"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_ingredient5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_ingredient3" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="51dp"
+            android:layout_height="27dp"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_instruction_title"
+            app:layout_constraintEnd_toStartOf="@+id/shrimp_timer"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_ingredient7"
+            app:srcCompat="@android:drawable/presence_away" />
+
+        <TextView
+            android:id="@+id/shrimp_timer"
+            android:layout_width="334dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/healthyrecipe_food_shrimp_timer"
+            android:textColor="@android:color/holo_orange_dark"
+            app:layout_constraintBottom_toTopOf="@+id/shrimp_instruction1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/shrimp_ingredient7"
+            app:layout_constraintVertical_bias="0.27" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

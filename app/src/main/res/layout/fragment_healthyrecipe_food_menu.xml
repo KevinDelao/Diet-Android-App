@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/food_menu"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="@color/food_background"
+        android:filterTouchesWhenObscured="false"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <RatingBar
+            android:id="@+id/simpleRatingBar"
+            android:layout_width="139dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="56dp"
+            android:background="@color/colorPrimary"
+            android:progressTint="@android:color/holo_orange_light"
+            android:rating="5"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/shrimpt"
+            android:layout_width="408dp"
+            android:layout_height="382dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/simpleRatingBar"
+            app:srcCompat="@drawable/shrimp" />
+
+        <TextView
+            android:id="@+id/food_title"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:text="@string/healthyrecipe_food"
+            android:textAlignment="center"
+            android:textColor="@color/sub_title"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/shrimpt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.296" />
+
+        <TextView
+            android:id="@+id/shrimpt_source_intro"
+            android:layout_width="252dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="14dp"
+            android:text="@string/healthyrecipe_food_shrimp_source"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/shrimpt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food_title"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/view_recipe"
+            android:layout_width="87dp"
+            android:layout_height="91dp"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/healthyrecipe_food_viewRecipe_button"
+            android:textColor="#0BE219"
+            app:layout_constraintBottom_toTopOf="@+id/food_fact"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/food_fact"
+            android:layout_width="385dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/healthyrecipe_food_shrimp_fact"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shrimpt"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

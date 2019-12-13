@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.dietapp.databinding.FragmentHealthyrecipeBinding
 
 /**
@@ -29,6 +30,13 @@ class HealthyRecipe : Fragment() {
         img2 = binding.drink
 
 
+        //my part
+        img1.setOnClickListener{ view : View ->
+            view.findNavController().navigate(R.id.action_healthyRecipe_to_healthyRecipe_FoodMenu)
+        }
+        img2.setOnClickListener{ view : View ->
+            view.findNavController().navigate(R.id.action_healthyRecipe_to_healthyRecipe_OrangeDrink2)
+        }
 
         return binding.root
     }

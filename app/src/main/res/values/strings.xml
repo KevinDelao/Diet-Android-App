@@ -38,4 +38,27 @@
 
 
     <string name="delete_button">Delete Food</string>
+
+    <string name="healthyrecipe_food">Chili Lime Shrimp Skewers</string>
+    <string name="healthyrecipe_food_shrimp_source">source of Omega-3 and selenium</string>
+    <string name="healthyrecipe_food_viewRecipe_button">View Recipe</string>
+    <string name="healthyrecipe_food_shrimp_fact">Calories: 148k Cal | Protein: 23g | Fat: 5g | Cholesterol: 285mg | Sodium: 1180mg | Potassium: 100mg | Vitamin A: 150IU | Vitamin C: 5.2mg | Calcium: 168mg | Iron: 2.5mg</string>
+    <string name="healthyrecipe_food_shrimp_instruction_title">Instruction: </string>
+    <string name="healthyrecipe_food_shrimp_instruction1">1. Combine oil, chili powder, garlic, lime juice and zest, and salt in a small bowl.  Whisk well.  Pour over shrimp and let marinate for 20 minutes.</string>
+    <string name="healthyrecipe_food_shrimp_instruction2">2. Preheat grill.  Thread shrimp onto skewers and grill over medium heat, about 2 minutes per side, just until shrimp turn pink.</string>
+    <string name="healthyrecipe_food_shrimp_instruction3">3. Sprinkle with chopped cilantro and serve.</string>
+    <string name="healthyrecipe_food_shrimp_ingredient_title">Ingredients: </string>
+    <string name="healthyrecipe_food_shrimp_ingredient1">1 lb raw deveined shrimp</string>
+    <string name="healthyrecipe_food_shrimp_ingredient2">1 tablespoon olive or avocado oil</string>
+    <string name="healthyrecipe_food_shrimp_ingredient3">1 teaspoon chili powder</string>
+    <string name="healthyrecipe_food_shrimp_ingredient4">1 1/2 teaspoon minced garlic about 3 cloves</string>
+    <string name="healthyrecipe_food_shrimp_ingredient5">Juice and zest of 1 Lime</string>
+    <string name="healthyrecipe_food_shrimp_ingredient6">1/2 teaspoon sea salt</string>
+    <string name="healthyrecipe_food_shrimp_ingredient7">chopped fresh cilantro</string>
+    <string name="healthyrecipe_food_shrimp_timer">Prep Time: 20 minutes | | Cook Time: 5 minutes </string>
+
+    <string name="healthyrecipe_drink_OrangeJuice_title">Orange Juice</string>
+    <string name="healthyrecipe_drink_OrangeJuice_source">source of Vitamin C</string>
+    <string name="healthyrecipe_drink_OrangeJuice_fact">Calories: 110k Cal | Protein: 2g | Carbs: 26g | Vitamin C: 67% of the Reference Daily Intake (RDI) | Folate: 15% of the RDI | Potassium: 10% of the RDI | Magnesium: 6% of the RDI</string>
+
 </resources>
