@@ -27,9 +27,10 @@ class TitleFragment : Fragment()
     ): View? {
         viewTitle = inflater.inflate(R.layout.fragment_title,container,false)
         toCaloriePage = viewTitle.findViewById(R.id.title_page_calorie_counter_button)
-
+        toNotifications = viewTitle.findViewById(R.id.title_page_notification_button)
         toRecordsPage = viewTitle.findViewById(R.id.title_page_goals_button
         )
+
         toRecordsPage.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.titleFragment_to_recordsFragment)
         }
@@ -45,9 +46,9 @@ class TitleFragment : Fragment()
         toHealthyRecipe.setOnClickListener{ view : View ->
             view.findNavController().navigate(R.id.action_titleFragment_to_healthyRecipe)
         }
-//        toNotifications.setOnClickListener{ view : View ->
-//            view.findNavController().navigate(R.id.action_titleFragment_to_notificationActivity)
-//        }
+        toNotifications.setOnClickListener{ view : View ->
+                view.findNavController().navigate(R.id.action_titleFragment_to_notificationActivity)
+         }
 
         return viewTitle
         }

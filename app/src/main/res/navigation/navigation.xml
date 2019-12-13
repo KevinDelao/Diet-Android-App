@@ -21,6 +21,9 @@
         <action
             android:id="@+id/titleFragment_to_recordsFragment"
             app:destination="@id/recordsFragment"/>
+        <action
+            android:id="@+id/action_titleFragment_to_notificationActivity"
+            app:destination="@id/notificationActivity" />
     </fragment>
 
     <fragment
