@@ -18,6 +18,7 @@ class TitleFragment : Fragment()
     lateinit var viewTitle:View;
     lateinit var toCaloriePage: Button
     lateinit var toHealthyRecipe: Button
+    lateinit var toRecordsPage: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,6 +26,12 @@ class TitleFragment : Fragment()
     ): View? {
         viewTitle = inflater.inflate(R.layout.fragment_title,container,false)
         toCaloriePage = viewTitle.findViewById(R.id.title_page_calorie_counter_button)
+
+        toRecordsPage = viewTitle.findViewById(R.id.title_page_goals_button
+        )
+        toRecordsPage.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.titleFragment_to_recordsFragment)
+        }
 
         //my part
         toHealthyRecipe = viewTitle.findViewById(R.id.title_page_healthy_recipes_button)
