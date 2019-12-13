@@ -29,7 +29,7 @@ The Healthy Recipe Fragment provides the healthy food recipes that can help user
 3. LifeCycle: https://developer.android.com/topic/libraries/architecture/lifecycle
 4. HelloCharts: https://github.com/lecho/hellocharts-android
 
-Kevin Delao: Calorie Counter Fragment
+Kevin Delao: Calorie Counter Fragment, AddFoodFragment, FoodOverview Fragment
 
 Yilin Ruan: Healthy Food Recipe
 
