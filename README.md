@@ -19,9 +19,7 @@ point and lets users enter what they ate and then see at what time the food was 
 The Healthy Recipe Fragment provides the healthy food recipes that can help users to reach and maintain healthy weight and reduce risk of diseases. User can easily learn how to make the food and buy the ingredients by clicking them. (For healthy drink just click the picture)
 
 ## Screenshots
-<img src="screenshots/caloriefragment.png" alt="phone image" width="200px" />
-<img src="screenshots/caloriefragment_foodentry.png" alt="phone image" width="200px" />
-<img src="screenshots/caloriefragment_overiview.png" alt="phone image" width="200px" />
+<img src="screenshots/caloriefragment.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_foodentry.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_overiview.png" alt="phone image" width="200px" />
 
 ## Some Libraries Used
 1. Room: https://developer.android.com/topic/libraries/architecture/room
