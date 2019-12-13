@@ -25,7 +25,7 @@ The Healthy Recipe Fragment provides the healthy food recipes that can help user
 ## Screenshots
 <img src="screenshots/caloriefragment.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_foodentry.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_overiview.png" alt="phone image" width="200px" />
 
-<img src="screenshots/healthyRecipe01.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe2.png" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe03.png" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe04.png" alt="phone image" width="200px" />
+<img src="screenshots/healthyRecipe01.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe2.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe03.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe04.PNG" alt="phone image" width="200px" />
 
 ## Some Libraries Used
 1. Room: https://developer.android.com/topic/libraries/architecture/room
