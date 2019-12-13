@@ -8,7 +8,14 @@ The purpose of the Calorie Counter Fragment is to provide a way for users to reg
 what time they ate to ensure that users know what they are eating to promote healthier living.
 
 Motivation:
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+Most diet apps restrict you on what you can track and sometimes provide too many options on what to track for certain foods, the calorie fragment is meant to provide a very simple way for users to enter what they ate and record at what time of the day they ate in order to provide a simple tracking of calories.
+
+Code style:
+
+Kotlin was used to make all the files associated with the calorie fragment
+
+Features:
+
 
 Yilin Ruan: Healthy Food Recipe
 
