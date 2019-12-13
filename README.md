@@ -1,6 +1,5 @@
 # Diet-Android-App
 First Document 
-## Kevin Delao
 ## Introduction Calorie Fragment:
 The purpose of the Calorie Counter Fragment is to provide a way for users to register what they have eaten throughout the day and track at
 what time they ate to ensure that users know what they are eating to promote healthier living.
