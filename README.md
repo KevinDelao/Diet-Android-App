@@ -33,6 +33,8 @@ The record tracker fragment is an interface for users to observe logs they have 
 
 <img src="screenshots/healthyRecipe01.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe02.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe03.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe04.PNG" alt="phone image" width="200px" />
 
+<img src="screenshots/RecordEntryFragment.JPG" alt="phone image" width="200px" /><img src="screenshots/RecordProgressFragment.JPG" alt="phone image" width="200px" />
+
 ## Some Libraries Used
 1. Room: https://developer.android.com/topic/libraries/architecture/room
 2. Recyclerview: https://developer.android.com/reference/android/support/v7/widget/RecyclerView
