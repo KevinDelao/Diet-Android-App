@@ -24,7 +24,13 @@ There are diets that restrict the person on the diet from eating within certain 
 
 ## Code style:
 
-Kotlin was used to make all the files associated with the calorie fragment
+Kotlin was used to make all the files associated with the calorie fragment. Here are three of the major tools we used to implement the app.
+
+Room was used to implement the food diary and record tracker part of the app.
+
+Data binding was used to implement most of the fragments that were part of the MVVM architecture part of the app.
+
+RecyclerView was used to implement Record Tracker and Food Diary.
 
 ## Features:
 The calorie fragment provides a easy to use interface that allows users to simply to click on a button that takes them to a entry
