@@ -5,7 +5,7 @@
         android:icon="@android:drawable/star_big_on"
         android:title="Calorie Counter" />
     <item
-        android:id="@+id/recordTrackerFragment"
+        android:id="@+id/recordEntry"
         android:icon="@android:drawable/star_big_on"
         android:title="Weight Progress"/>
     <item
