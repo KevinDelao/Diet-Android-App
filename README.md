@@ -49,9 +49,14 @@ The exercise fragment is an interface that provides the users with various knowl
 The reminder(notification) fragment is an interface that allows the user to use a dropdown menu with set times to schedule a notification to pop up after a certain time has passed.
 
 ## Screenshots
+
+<img src="screenshots/Home.jpg" alt="phone image" width="200px" />
+
 <img src="screenshots/caloriefragment.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_foodentry.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_overiview.png" alt="phone image" width="200px" />
 
 <img src="screenshots/healthyRecipe01.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe02.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe03.PNG" alt="phone image" width="200px" /><img src="screenshots/healthyRecipe04.PNG" alt="phone image" width="200px" />
+
+<img src="screenshots/Exercise_1.jpg" alt="phone image" width="200px" /><img src="screenshots/Exercise_2.jpg" alt="phone image" width="200px" /><img src="screenshots/Exercise_3.jpg" alt="phone image" width="200px" />
 
 <img src="screenshots/RecordEntryFragment.JPG" alt="phone image" width="200px" /><img src="screenshots/RecordProgressFragment.JPG" alt="phone image" width="200px" />
 
