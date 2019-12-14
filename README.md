@@ -2,6 +2,8 @@
 First Document 
 
 ## Introduction:
+The reason why we decided to make a Diet Application is because there are many out there, and we can reference them to see what we could make.
+
 The purpose of the Calorie Counter Fragment is to provide a way for users to register what they have eaten throughout the day and track at
 what time they ate to ensure that users know what they are eating to promote healthier living.
 
@@ -9,12 +11,16 @@ The purpose of healthy recipe fragment is to provide users with some good recipe
 
 The purpose of the weight progress fragment is to allow users to track their weight by entering logs into the dieting app.
 
+The purpose of the notification fragment is to allow the user to schedule a notification to remind them what times they should eat.
+
 ## Motivation:
 Most diet apps restrict you on what you can track and sometimes provide too many options on what to track for certain foods, the calorie fragment is meant to provide a very simple way for users to enter what they ate and record at what time of the day they ate in order to provide a simple tracking of calories.
 
 Healthy recipe fragment provides nice looking and easy-to-learn meals to ensure users are motivated to maintain a healthy diet.
 
 The record tracker fragment allows users to pick up on good eating trends by observing the logs in the fragment and following good habits to facilitate weight loss or muscle gain.
+
+There are diets that restrict the person on the diet from eating within certain hours, with a scheduled notification, we they can set a schedule of when they are allowed to eat.
 
 ## Code style:
 
@@ -27,6 +33,8 @@ point and lets users enter what they ate and then see at what time the food was 
 The Healthy Recipe Fragment provides the healthy food recipes that can help users to reach and maintain healthy weight and reduce risk of diseases. User can easily learn how to make the food and buy the ingredients by clicking them. (For healthy drink just click the picture)
 
 The record tracker fragment is an interface for users to observe logs they have previously input to the app. Record tracker extends to the record entry fragment which allows users to input their current weight and calories consumed on that day. The app will automatically attach a timestamp on each record in year month day format.
+
+The reminder(notification) fragment is an interface that allows the user to use a dropdown menu with set times to schedule a notification to pop up after a certain time has passed.
 
 ## Screenshots
 <img src="screenshots/caloriefragment.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_foodentry.png" alt="phone image" width="200px" /><img src="screenshots/caloriefragment_overiview.png" alt="phone image" width="200px" />
