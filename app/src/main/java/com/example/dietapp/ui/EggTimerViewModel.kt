@@ -9,7 +9,7 @@ import android.os.SystemClock
 import androidx.core.app.AlarmManagerCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.*
-import com.example.android.eggtimernotifications.util.cancelNotifications
+import com.example.dietapp.util.cancelNotifications
 import com.example.dietapp.R
 
 import com.example.dietapp.receiver.AlarmReceiver
@@ -28,7 +28,7 @@ class EggTimerViewModel(private val app: Application) : AndroidViewModel(app) {
 
     private val alarmManager = app.getSystemService(Context.ALARM_SERVICE) as AlarmManager
     private var prefs =
-        app.getSharedPreferences("com.example.android.eggtimernotifications", Context.MODE_PRIVATE)
+        app.getSharedPreferences("com.example.dietapp", Context.MODE_PRIVATE)
     private val notifyIntent = Intent(app, AlarmReceiver::class.java)
 
     private val _timeSelection = MutableLiveData<Int>()
