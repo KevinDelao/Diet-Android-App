@@ -52,6 +52,11 @@
         android:text="@string/title_page_button_healthy_recipes"
         android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
     <Button
+        android:id="@+id/title_page_healthy_exercise_button"
+        style="@style/title_page_buttons"
+        android:text="@string/title_page_button_exercise"
+        android:layout_marginBottom="@dimen/title_page_button_margin_bottom"/>
+    <Button
         android:id="@+id/title_page_notification_button"
         style="@style/title_page_buttons"
         android:text="@string/title_page_button_notification"

@@ -19,6 +19,7 @@ class TitleFragment : Fragment()
     lateinit var toCaloriePage: Button
     lateinit var toHealthyRecipe: Button
     lateinit var toRecordsPage: Button
+    lateinit var toExercisePage: Button
     lateinit var toNotifications: Button
 
     override fun onCreateView(
@@ -29,6 +30,7 @@ class TitleFragment : Fragment()
         toCaloriePage = viewTitle.findViewById(R.id.title_page_calorie_counter_button)
         toNotifications = viewTitle.findViewById(R.id.title_page_notification_button)
         toRecordsPage = viewTitle.findViewById(R.id.title_page_weight_progress_button)
+        toExercisePage = viewTitle.findViewById(R.id.title_page_healthy_exercise_button)
 
         toRecordsPage.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.titleFragment_to_recordsFragment)
@@ -45,6 +47,11 @@ class TitleFragment : Fragment()
         toHealthyRecipe.setOnClickListener{ view : View ->
             view.findNavController().navigate(R.id.action_titleFragment_to_healthyRecipe)
         }
+
+        toExercisePage.setOnClickListener{ view : View ->
+            view.findNavController().navigate(R.id.action_titleFragment_to_exerciseFragment)
+        }
+
         toNotifications.setOnClickListener{ view : View ->
             view.findNavController().navigate(R.id.action_titleFragment_to_notificationActivity)
         }

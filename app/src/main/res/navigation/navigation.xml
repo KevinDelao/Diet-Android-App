@@ -14,29 +14,39 @@
 
         <action
             android:id="@+id/action_titleFragment_to_healthyRecipe"
-            app:destination="@id/healthyRecipe" />
+            app:destination="@id/healthyRecipe"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_titleFragment_to_calorieFragment"
-            app:destination="@id/calorieFragment" />
+            app:destination="@id/calorieFragment"
+            app:popUpTo="@id/titleFragment" />
         <action
             android:id="@+id/titleFragment_to_recordsFragment"
-            app:destination="@id/recordsFragment"/>
+            app:destination="@id/recordsFragment"
+            app:popUpTo="@id/titleFragment" />
         <action
             android:id="@+id/action_titleFragment_to_notificationActivity"
-            app:destination="@id/notificationActivity" />
+            app:destination="@id/notificationActivity"
+            app:popUpTo="@id/titleFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment"
+            app:popUpTo="@id/titleFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/healthyRecipe"
         android:name="com.example.dietapp.HealthyRecipe"
-        android:label="HealthyRecipe"
-        tools:layout="@layout/fragment_healthyrecipe">
+        android:label="HealthyRecipe">
         <action
             android:id="@+id/action_healthyRecipe_to_healthyRecipe_FoodMenu"
-            app:destination="@id/healthyRecipe_FoodMenu" />
+            app:destination="@id/healthyRecipe_FoodMenu"
+            app:popUpTo="@id/healthyRecipe" />
         <action
             android:id="@+id/action_healthyRecipe_to_healthyRecipe_OrangeDrink2"
-            app:destination="@id/healthyRecipe_OrangeDrink" />
+            app:destination="@id/healthyRecipe_OrangeDrink"
+            app:popUpTo="@id/healthyRecipe" />
     </fragment>
     <fragment
         android:id="@+id/healthyRecipe_FoodMenu"
@@ -45,7 +55,8 @@
         tools:layout="@layout/fragment_healthyrecipe_food_menu">
         <action
             android:id="@+id/action_healthyRecipe_FoodMenu_to_healthyRecipe_FoodDetail"
-            app:destination="@id/healthyRecipe_FoodDetail" />
+            app:destination="@id/healthyRecipe_FoodDetail"
+            app:popUpTo="@id/healthyRecipe_FoodMenu" />
     </fragment>
     <fragment
         android:id="@+id/healthyRecipe_FoodDetail"
@@ -67,10 +78,12 @@
         tools:layout="@layout/calorie_layout">
         <action
             android:id="@+id/action_calorieFragment_to_addFoodFragment2"
-            app:destination="@id/addFoodFragment2" />
+            app:destination="@id/addFoodFragment2"
+            app:popUpTo="@id/calorieFragment" />
         <action
             android:id="@+id/action_calorieFragment_to_foodOverViewFragment"
-            app:destination="@id/foodOverViewFragment" />
+            app:destination="@id/foodOverViewFragment"
+            app:popUpTo="@id/calorieFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFoodFragment2"
@@ -93,11 +106,11 @@
     <fragment
         android:id="@+id/recordsFragment"
         android:name="com.example.dietapp.recordsMVVM.RecordTrackerFragment"
-        android:label="Record Fragment"
-        tools:layout="@layout/record_progress">
+        android:label="Record Fragment">
         <action
             android:id="@+id/recordProgress_to_recordEntry"
-            app:destination="@id/recordEntry"/>
+            app:destination="@id/recordEntry"
+            app:popUpTo="@id/recordsFragment" />
     </fragment>
     <fragment
         android:id="@+id/recordEntry"
@@ -113,4 +126,48 @@
         android:name="com.example.dietapp.NotificationActivity"
         android:label="NotificationActivity"
         tools:layout="@layout/fragment_notification"/>
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.example.dietapp.ExerciseFragment"
+        android:label="Exercise"
+        tools:layout="@layout/fragment_exercise">
+        <action
+            android:id="@+id/action_exerciseFragment_to_exercise2Fragment"
+            app:destination="@id/exercise2Fragment"
+            app:popUpTo="@id/exerciseFragment" />
+        <action
+            android:id="@+id/action_exerciseFragment_to_exercise3TipsFragment"
+            app:destination="@id/exercise3TipsFragment"
+            app:popUpTo="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exercise2Fragment"
+        android:name="com.example.dietapp.Exercise2Fragment"
+        android:label="Weight Loss"
+        tools:layout="@layout/fragment_exercise2">
+        <action
+            android:id="@+id/action_exercise2Fragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_exercise2Fragment_to_healthyRecipe"
+            app:destination="@id/healthyRecipe" />
+        <action
+            android:id="@+id/action_exercise2Fragment_to_calorieFragment"
+            app:destination="@id/calorieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exercise3TipsFragment"
+        android:name="com.example.dietapp.Exercise3TipsFragment"
+        android:label="Tips"
+        tools:layout="@layout/fragment_exercise3_tips">
+        <action
+            android:id="@+id/action_exercise3TipsFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_exercise3TipsFragment_to_healthyRecipe"
+            app:destination="@id/healthyRecipe" />
+        <action
+            android:id="@+id/action_exercise3TipsFragment_to_calorieFragment"
+            app:destination="@id/calorieFragment" />
+    </fragment>
 </navigation>
