@@ -60,19 +60,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/egg_image"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:contentDescription="Egg"
-            app:layout_constraintBottom_toTopOf="@id/minutes_spinner"
+            android:id="@+id/diet_image"
+            android:layout_width="243dp"
+            android:layout_height="192dp"
+            android:layout_gravity="center_horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/cooked_egg"
-            tools:srcCompat="@drawable/cooked_egg" />
+            app:srcCompat="@drawable/diet" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
