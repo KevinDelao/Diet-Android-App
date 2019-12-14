@@ -2,7 +2,7 @@
 First Document 
 
 ## Introduction:
-The reason why we decided to make a Diet Application is because there are many out there, and we can reference them to see what we could make.
+The reason why we decided to make a Diet Application is because there are many out there. Because we can take ideas from existing apps, we wanted to see what we could do to create an Android application with our own knowledge, and add our own spin on it.
 
 The purpose of the Calorie Counter Fragment is to provide a way for users to register what they have eaten throughout the day and track at
 what time they ate to ensure that users know what they are eating to promote healthier living.
