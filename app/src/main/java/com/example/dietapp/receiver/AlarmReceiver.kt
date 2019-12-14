@@ -6,7 +6,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.ContextCompat
-import com.example.android.eggtimernotifications.util.sendNotification
+import com.example.dietapp.util.sendNotification
 import com.example.dietapp.R
 
 class AlarmReceiver: BroadcastReceiver() {
